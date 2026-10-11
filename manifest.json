@@ -1,0 +1,12 @@
+{
+ "manifest_version":3,
+ "name":"Virtual Room → MP4",
+ "version":"0.1.0",
+ "description":"Скачивает презентацию, звук и события вебинара Virtual Room и собирает локальный MP4.",
+ "minimum_chrome_version":"120",
+ "permissions":["scripting","downloads"],
+ "host_permissions":["https://*.virtualroom.ru/*"],
+ "action":{"default_popup":"popup.html","default_title":"Скачать вебинар"},
+ "background":{"service_worker":"background.js"},
+ "content_security_policy":{"extension_pages":"script-src 'self' 'wasm-unsafe-eval'; object-src 'self'"}
+}

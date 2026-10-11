@@ -1,0 +1,9 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><title>Вебинар → MP4</title><link rel="stylesheet" href="style.css"></head><body><main>
+<p class="eyebrow">Virtual Room</p><h1>Сохранить вебинар</h1><p class="intro">Презентация, звук и пометки в обычном MP4. Воспроизводить лекцию во время скачивания не нужно.</p>
+<section><label for="url">Ссылка на запись</label><div class="row"><input id="url" type="url" placeholder="https://mv1.virtualroom.ru/record-player?recordId=…"><button id="analyze">Проверить</button></div><p class="hint">Откройте доступную вам запись в этом браузере, затем нажмите «Проверить».</p></section>
+<div id="error" role="alert" hidden></div>
+<section id="summary" hidden><h2 id="title"></h2><p id="facts"></p><p id="notes" class="hint"></p><div class="row"><label for="quality">Качество</label><select id="quality"><option value="1080">1080p</option><option value="720">720p</option></select></div><p><label><input id="sample" type="checkbox"> Сначала создать пробу первых двух минут</label></p><button id="start">Создать полное видео</button></section>
+<section id="progress-card" hidden aria-live="polite"><h2 id="status"></h2><p id="detail"></p><progress id="progress" max="100" value="0"></progress><button id="cancel" class="secondary">Остановить</button><p class="hint">Можно перейти на другую вкладку. Оставьте эту страницу открытой до завершения сборки.</p></section>
+<section id="result" hidden><h2>Видео готово</h2><video id="preview" controls preload="metadata"></video><p id="result-detail"></p><button id="download">Сохранить MP4</button></section>
+<p class="footer">Материалы обрабатываются на вашем компьютере. Поддерживаются записи со слайдами и звуком; камера преподавателя и панели сайта в видео не попадают.</p>
+</main><script type="module" src="export.js"></script></body></html>
